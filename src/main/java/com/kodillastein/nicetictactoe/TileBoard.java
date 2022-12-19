@@ -169,9 +169,9 @@ public class TileBoard {
         private Label label;
 
         public Tile() {
+
             pane = new StackPane();
             pane.setMinSize(100,100);
-
             Rectangle border = new Rectangle();
             border.setWidth(100);
             border.setHeight(100);
@@ -179,7 +179,7 @@ public class TileBoard {
             border.setStroke(Color.BLACK);
             pane.getChildren().add(border);
 
-            Label label = new Label("");
+            label = new Label("");
             label.setAlignment(Pos.CENTER);
             label.setFont(Font.font(24));
             pane.getChildren().add(label);
@@ -205,7 +205,4 @@ public class TileBoard {
             label.setText(value);
         }
     }
-
-
-
 }
